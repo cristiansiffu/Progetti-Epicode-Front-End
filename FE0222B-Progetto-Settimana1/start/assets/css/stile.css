@@ -1,0 +1,108 @@
+/* DICHIARAZIONI GENERALI*/
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.65;
+    padding: 15px;
+    max-width: 100vw;
+    text-align: center;
+}
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 1rem;
+}
+h1 {
+    font-size: 2rem;
+    line-height: 1.5;
+}
+button {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: #f04c2f;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    padding: 1rem;
+}
+* {
+    box-sizing: border-box;
+}
+hr {
+    color: white;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+/* HEADER */
+header {
+    background-color: black;
+    padding: 2.5rem;
+}
+header img {
+    width: 50%;
+}
+/* MAIN */
+main p {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+main section:first-child {
+    background-image: url(../images/banner.jpg);
+    background-position: center;
+    vertical-align: middle;
+    background-size: cover;
+}
+main>section {
+    padding: 3rem;
+}
+main img {
+    width: 100%;
+    height: 30%;
+}
+section>img {
+    border-radius: 50%;
+}
+div h1, h2, h3 {
+    color: #25a2c3;
+    line-height: 1.5;
+}
+article {
+    background-color: #e22d0e;
+    color: white;
+    padding: 2rem;
+}
+article blockquote {
+    font-size: 0.9rem;
+    font-style: italic;
+    padding: 0.5rem;
+}
+article figcaption {
+    font-weight: bold;
+}
+article figcaption span {
+    font-size: 0.9rem;
+}
+.div_border {
+    border: 1px solid #dee1e3;
+    margin-bottom: 1rem;
+}
+/* FOOTER */
+footer {
+    color: white;
+    background-color: #25a2c3;
+    padding: 2rem;
+}
+footer a:link, a:visited, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: white;
+}
+footer div {
+    margin-bottom: 1.5rem;
+    margin-top: 1rem;
+}
+footer p {
+    margin-top: 1.5rem;
+}
+nav div, p {
+    font-size: 0.9rem;
+}

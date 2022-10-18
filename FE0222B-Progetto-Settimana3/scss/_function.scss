@@ -1,0 +1,11 @@
+$color-light: white;
+$bg-color-dark: black;
+@function switch-theme($color: $color-light, $background: $bg-color-dark){
+    @if ( lightness($color) < 50% ) {
+        $colour: lighten($color, 25%);
+        $background: darken($background, 25%)
+    }@else{
+        $colour: darken($color, 25%);
+        $background: lighten($background, 25%)
+    }
+}

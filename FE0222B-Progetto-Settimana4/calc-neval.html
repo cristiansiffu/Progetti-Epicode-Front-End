@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/calc.css">
+    <title>Calcolatrice N-Eval</title>
+</head>
+
+<body>
+    <div class="containerNEval">
+        <input type="text" id="not-eval" class="displayNEval" readonly>
+        <button class="sp-button" onclick="pulisciNotEval()">C</button>
+        <button class="sp-button" onclick="eliminaNotEval()">&#8678;</i></button>
+        <button class="sp-button" onclick="inserimentoNotEval('%')">&#8484;</i></button>
+        <button class="op-button" onclick="inserimentoNotEval('/')">&divide;</i></button>
+        <button class="img1" onclick="inserimentoNotEval(7)">7</button>
+        <button class="img2" onclick="inserimentoNotEval(8)">8</button>
+        <button class="img3" onclick="inserimentoNotEval(9)">9</button>
+        <button class="op-button" onclick="inserimentoNotEval('*')">&times;</button>
+        <button class="img4" onclick="inserimentoNotEval(4)">4</button>
+        <button class="img5" onclick="inserimentoNotEval(5)">5</button>
+        <button class="img6" onclick="inserimentoNotEval(6)">6</button>
+        <button class="op-button" onclick="inserimentoNotEval('-')">&minus;</button>
+        <button class="img7" onclick="inserimentoNotEval(1)">1</button>
+        <button class="img8" onclick="inserimentoNotEval(2)">2</button>
+        <button class="img9" onclick="inserimentoNotEval(3)">3</button>
+        <button class="op-button" onclick="inserimentoNotEval('+')">&plus;</button>
+        <button class="img10"><a href="calc-eval.html">E</a></button>
+        <button class="img11" onclick="inserimentoNotEval(0)">0</button>
+        <button class="img12" onclick="inserimentoNotEval('.')">,</button>
+        <button class="sp-button" onclick="ugualeNotEval()">&equals;</button>
+    </div>
+
+
+
+    <script src="js/calc-neval.js"></script>
+</body>
+
+</html>

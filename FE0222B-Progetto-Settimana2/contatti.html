@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Epicode - Contatti</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Epicode School: contattaci per i corsi di Front End Developer.">
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/stile.css">
+  <link rel="stylesheet" href="assets/css/all.css">
+  <title></title>
+</head>
+
+<body>
+  <header id="headerIndex">
+    <div id="flexLogo">
+      <img src="assets/images/logo.png" alt="Logo Epicode">
+    </div>
+    <input type="checkbox" class="ellipsis" id="ellipsis">
+    <label for="ellipsis" class="iconElli"><i class="fa-solid fa-ellipsis"></i></label>
+    <div id="flexNav">
+      <nav>
+        <ul>
+          <li><a href="index.html" title="Home Page">Home</a></li>
+          <li><a href="chi-siamo.html" title="Elenco degli articoli tecnici pubblicati">Chi siamo</a></li>
+          <li><a href="contatti.html" title="Candidati inviando un tuo cv">Contatti</a></li>
+          <li>
+            <form action="https://epicode.it"><button id="registrazione">Registrati!</button></form>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main id="mainContatti">
+    <h1>Contatti</h1>
+    <div id="containerContatti">
+      <div id="formContatti">
+        <form action="">
+          <label for="nome-cognome"></label>
+          <input type="text" id="nome-cognome" name="nome-cognome" placeholder="Nome e cognome">
+      
+          <label for="email"></label>
+          <input type="email" id="email" name="email" placeholder="Indirizzo valido nome@casella.com">
+      
+          <label for="messaggio"></label>
+          <textarea id="subject" name="messaggio" placeholder="Scrivi in breve il tuo messaggio" style="height: 100px;"></textarea>
+      
+          <button type="submit" form="form1" value="Submit">Invia il messaggio</button>
+        </form>
+      </div>
+      <section>
+        <h2>Sede formativa</h2>
+        <address>
+          <p>Via Appia 1<br>
+            00100 Roma (RM)</p>
+          <a href="mailto:info@epicode.school">info@epicode.school</a>
+          <a href="tel:+390612345956">+39 0612345956</a>
+        </address>
+        <h2>Lavora con noi</h2>
+        <p>Per poterti candidare ad un ruolo da docente invia il tuo cv a <a href="mailto:job@epicode.school">job@epicode.school</a></p>
+      </section>
+    </div>
+  </main>
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+<div class="container">
+    <div class="my-5 mx-auto w-50" *ngIf="load === true">
+        <h3>Retrieving Tasks...</h3>
+    </div>
+    <div *ngIf="load === false">
+        <div class="input-group my-5 mx-auto w-50">
+            <h1>My To-do List: </h1>
+        </div>
+        <div class="input-group my-5 mx-auto w-50">
+            <input type="text" class="form-control" placeholder="New Todo: " aria-label="New Todo: "
+                aria-describedby="button-addon2" #todo>
+            <button class="btn btn-dark btn-outline-info" type="button" id="button-addon2"
+                (click)="addTodo(todo.value)">Add</button>
+        </div>
+
+        <ul class="list-group my-1 mx-auto w-50">
+            <h3 *ngIf="todosService.checkTodoList() === 0">Your To-do List is empty...</h3>
+            <li class="list-group-item my-1" *ngFor="let item of todosService.getTodos(false); let i = index;">
+                <div class="d-flex justify-content-between align-items-center">
+                    {{item.id}} {{item.title}}
+                    <button class="btn btn-success me-md-2" type="button" (click)="completedTodo(item)">Complete</button>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>

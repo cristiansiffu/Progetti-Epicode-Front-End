@@ -1,0 +1,12 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="javascript:void(0)">To-do List</a>
+        <div class="collapse navbar-collapse d-flex justify-content-evenly" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-link active" [routerLink]="['/']" routerLinkActive="active"
+                    [routerLinkActiveOptions]="{exact: true}">To-do</a>
+                <a class="nav-link" [routerLink]="['/completed']" routerLinkActive="active">Completed</a>
+            </div>
+        </div>
+    </div>
+</nav>

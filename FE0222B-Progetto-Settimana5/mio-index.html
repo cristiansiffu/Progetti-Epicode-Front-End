@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="mio-css/mio-style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gothic&display=swap" rel="stylesheet">
+  <title>Progetto Settimana 5</title>
+</head>
+
+<body>
+  <h2>Tentativi Rimasti: <span class="tentativiGiocatore"></span></h2>
+  <section></section>
+
+  <button class="gioca button" onclick="inizioPartita()">
+    <span class="button_sinistra"></span>
+    <span class="button_sopra"></span>
+    <span class="button_destra"></span>
+    <span class="button_sotto"></span>Ricomincia</button>
+  <button class="timer button">
+    <span class="button_sinistra"></span><span class="button_sopra"></span><span class="button_destra"></span><span
+      class="button_sotto"></span>
+    Tempo: 00:00:00</button>
+
+  <div id="modale">
+    <div class="content">
+      <h2 id="finePartita"></h2>
+      <h3 id="ricompensa"></h3><br>
+      <div id="premio"></div>
+      <button class="timer button" id="tempoTrascorso">
+        <span class="button_sinistra"></span><span class="button_sopra"></span><span class="button_destra"></span><span
+          class="button_sotto"></span>
+      </button>
+      <button class="gioca button" onclick="giocaAncora()">
+        <span class="button_sinistra"></span><span class="button_sopra"></span><span class="button_destra"></span><span
+          class="button_sotto"></span>
+        Gioca di nuovo!</button>
+    </div>
+  </div>
+
+  <button class="switch"><a href="index.html">&rArr;</a></button>
+
+  <script src="mio-js/mio-memory.js"></script>
+</body>
+
+</html>
